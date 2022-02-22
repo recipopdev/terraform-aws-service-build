@@ -1,13 +1,16 @@
 variable "service" {
-  type = string
+  description = "The name of the service being built"
+  type        = string
 }
 
 variable "tag" {
-  type = string
+  description = "The tag to attach to the service being built"
+  type        = string
 }
 
 variable "build" {
-  type = object({
+  description = "The details of the build of the service"
+  type        = object({
     path   = string
     labels = map(string)
     args   = map(string)
