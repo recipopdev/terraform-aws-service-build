@@ -14,5 +14,6 @@ resource "docker_registry_image" "main" {
     context    = "${var.build.path}/"
     build_args = var.build.args
     labels     = var.build.labels
+    platform   = "linux/amd64"
   }
 }
