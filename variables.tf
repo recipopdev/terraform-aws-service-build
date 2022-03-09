@@ -16,3 +16,9 @@ variable "build" {
     args   = map(string)
   })
 }
+
+variable "platform" {
+  description = "The platform of the container"
+  type        = string
+  default     = "linux/amd64"
+}
