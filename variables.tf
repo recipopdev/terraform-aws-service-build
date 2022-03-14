@@ -25,6 +25,6 @@ variable "platform" {
 
 variable "memory" {
   description = "The memory used for the build"
-  type        = string
-  default     = "2g"
+  type        = number
+  default     = 2048
 }
