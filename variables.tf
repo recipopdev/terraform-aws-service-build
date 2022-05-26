@@ -22,9 +22,3 @@ variable "platform" {
   type        = string
   default     = "linux/amd64"
 }
-
-variable "memory" {
-  description = "The memory used for the build"
-  type        = number
-  default     = 2048
-}
