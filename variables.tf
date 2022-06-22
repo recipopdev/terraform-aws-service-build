@@ -22,3 +22,9 @@ variable "platform" {
   type        = string
   default     = "linux/amd64"
 }
+
+variable "image_mutability" {
+  description = "The image tag mutability"
+  type        = string
+  default     = "IMMUTABLE"
+}
