@@ -16,9 +16,4 @@ resource "docker_registry_image" "main" {
     labels     = var.build.labels
     platform   = var.platform
   }
-  
-  timeouts {
-    create = "40m"
-    update = "40m"
-  }
 }
