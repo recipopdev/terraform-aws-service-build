@@ -17,6 +17,12 @@ variable "build" {
   })
 }
 
+variable "dockerfile" {
+  description = "The name of the dockerfile"
+  type        = string
+  default     = "Dockerfile"
+}
+
 variable "platform" {
   description = "The platform of the container"
   type        = string

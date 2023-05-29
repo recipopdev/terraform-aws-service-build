@@ -12,6 +12,7 @@ resource "docker_registry_image" "main" {
 
   build {
     context    = "${var.build.path}/"
+    dockerfile = var.dockerfile
     build_args = var.build.args
     labels     = var.build.labels
     platform   = var.platform
