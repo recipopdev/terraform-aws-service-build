@@ -16,5 +16,6 @@ resource "docker_registry_image" "main" {
     build_args = var.build.args
     labels     = var.build.labels
     platform   = var.platform
+    cache_from = var.cache_from
   }
 }
