@@ -10,7 +10,7 @@ variable "tag" {
 
 variable "build" {
   description = "The details of the build of the service"
-  type        = object({
+  type = object({
     path   = string
     labels = map(string)
     args   = map(string)
@@ -33,4 +33,10 @@ variable "image_mutability" {
   description = "The image tag mutability"
   type        = string
   default     = "IMMUTABLE"
+}
+
+variable "cache_from" {
+  description = "The cache source"
+  type        = list(string)
+  default     = []
 }
