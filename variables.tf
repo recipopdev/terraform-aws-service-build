@@ -34,9 +34,3 @@ variable "image_mutability" {
   type        = string
   default     = "IMMUTABLE"
 }
-
-variable "cache_from" {
-  description = "The cache source"
-  type        = list(string)
-  default     = []
-}
