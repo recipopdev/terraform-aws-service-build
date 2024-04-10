@@ -8,6 +8,10 @@ resource "aws_ecr_repository" "main" {
 }
 
 resource "docker_registry_image" "main" {
+  name = docker_image.main.name
+}
+
+resource "docker_image" "main" {
   name = "${aws_ecr_repository.main.repository_url}:${var.tag}"
 
   build {
